@@ -1,0 +1,23 @@
+Segue a pergunta: 
+
+Considere a interface Tributavel da forma conforme que se segue abaixo:
+
+public interface Tributavel {
+public double calcularTributos();
+}
+
+A interface Tributavel indica que qualquer ativo ou bem tributável deve fornecer instrumento ou meio para cálculo de
+tributos, de modo que seja identificado e retornado valor totalizado de tais tributos (vide método calcularTributos).
+Readeque a classe Conta da questão anterior para que esta implemente a interface Tributavel; ao fazê-lo, considere que as
+operações de depósito e de saque sejam tributadas em 1% usando-se como base de teto o próprio valor de cada operação, bem
+como restrições anteriores em relação ao saldo corrente ser inferior ao saldo mínimo definido para a conta. Os valores obtidos
+com a tributação deverão ser armazenados em campo de instância adicional a ser incluído na classe Conta para que seja
+viabilizada implementação do método calcularTributos da interface Tributavel, que consistiria no retorno, justamente, do
+valor de tal campo de instância, além de que tais valores deverão ser deduzidos do saldo corrente da conta. Por fim, ao
+
+final, também readeque a classe ContaUtil da questão anterior de maneira que, após instanciação do objeto da classe Conta,
+possa ser executado, a qualquer momento, qualquer número de operações de depósito ou saque (após o término da entrada da
+última operação, deverá ser permitido encerrar a execução do programa ou realizar outra operação de saque ou depósito com o
+objeto instanciado). Ao encerrar a execução do método main, deverá ser exibida saldo da conta representada pelo objeto
+instanciado, bem como totalização de tributos gerados utilizando-se da implementação, aqui discutida, do método
+calcularTributos.
